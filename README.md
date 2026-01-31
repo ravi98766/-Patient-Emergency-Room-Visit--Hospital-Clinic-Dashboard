@@ -174,6 +174,10 @@ Risks
 2.	Improve feedback capture using automated digital surveys.
 
 3.	Clean department assignment data at discharge.
+
+4.	Optimize weekday staffing models.
+
+5.	Introduce predictive demand planning using historical trends.
    
 <img width="961" height="470" alt="data model" src="https://github.com/user-attachments/assets/5a33d285-6338-45c7-b63a-e5963a91feab" />
 
@@ -341,5 +345,4 @@ IF(_PatientAge<=2,"Infancy",
 )
 ```
 
-5.	Optimize weekday staffing models.
-6.	Introduce predictive demand planning using historical trends.
+
