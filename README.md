@@ -1,9 +1,9 @@
-****Below is a more detailed, structured analytical summary of the Patient Emergency Room Visit Report, suitable for management review, audit documentation, or dashboard narration.****
+# Below is a more detailed, structured analytical summary of the Patient Emergency Room Visit Report, suitable for management review, audit documentation, or dashboard narration.
 
-**1.Executive Overview**
+# 1.Executive Overview
 The Emergency Room recorded 4,632 total patient visits, indicating sustained demand on ER services. Patient flow is primarily walk-in driven, with a strong weekday concentration and a predominantly adult patient base. While operational throughput appears stable, patient feedback capture is notably weak, limiting service quality insights.
 
-**2. Visit Composition & Appointment Type**
+# 2. Visit Composition & Appointment Type
 
 •	Administrative visits: 49.35%
 
@@ -13,7 +13,7 @@ The Emergency Room recorded 4,632 total patient visits, indicating sustained dem
 
 The near-even split suggests the ER is handling a significant administrative workload alongside clinical care, which may contribute to congestion and extended wait times.
 
-**4. Patient Access & Entry Mode**
+# 4. Patient Access & Entry Mode
 
 •	Walk-in patients: 58.85%
 
@@ -23,7 +23,7 @@ The near-even split suggests the ER is handling a significant administrative wor
 
 High walk-in volume increases unpredictability in patient inflow, placing pressure on triage, staffing, and bed availability—especially during peak weekday hours.
 
-**5. Waiting Time & Service Efficiency**
+# 5. Waiting Time & Service Efficiency
 
 •	Average waiting time: 35.53 minutes
 
@@ -31,7 +31,7 @@ High walk-in volume increases unpredictability in patient inflow, placing pressu
 
 This wait time is moderate for an ER setting but may be perceived negatively by walk-in patients without acuity-based prioritization. Variation by age group and department likely exists and should be monitored.
 
-**6. Patient Satisfaction & Feedback Gaps**
+# 6. Patient Satisfaction & Feedback Gaps
 
 •	Average satisfaction score: 5.45
 
@@ -50,7 +50,7 @@ The satisfaction score is based on a small subset of respondents, making it stat
 
 Implement automated or mandatory post-visit feedback collection (SMS/QR-based).
 
-**7. Demographic Analysis**
+# 7. Demographic Analysis
 
 Gender Distribution
 
@@ -82,7 +82,7 @@ Infancy	102
 
 Adults account for ~77% of all ER visits, making adult medicine the primary driver of ER workload.
 
-**7. Temporal Patterns**
+# 7. Temporal Patterns
 
 **Weekly Pattern**
 
@@ -91,7 +91,9 @@ Adults account for ~77% of all ER visits, making adult medicine the primary driv
 •	Weekends: ~1,300 visits
 
 **Operational Impact:**
+
 Staffing, diagnostics, and bed capacity should be weekday-optimized, with reduced but flexible weekend coverage.
+
 Annual Trend
 •	2019: ~2,177 visits
 •	2020: ~2,455 visits
@@ -100,7 +102,8 @@ Annual Trend
 
 A year-over-year increase (~13%), indicating rising ER dependency and potential future capacity constraints.
 
-**8. Department-Level Utilization**
+# 8. Department-Level Utilization
+
 **Department	Visits**
 
 None / Unassigned	2,726
@@ -120,6 +123,7 @@ Gastroenterology	94
 Renal	42
 
 **Key Concern:**
+
 The high “None / Unassigned” category suggests:
 
 •	Data capture issues
@@ -130,7 +134,7 @@ The high “None / Unassigned” category suggests:
 
 This reduces analytical accuracy and resource planning effectiveness.
 
-**9. Equity & Wait-Time Distribution (Heatmap Insight)**
+# 9. Equity & Wait-Time Distribution (Heatmap Insight)
 
 •	Darker green indicates shorter wait times
 
@@ -145,7 +149,7 @@ o	Uneven service distribution
 Recommendation:
 Conduct equity-focused wait-time audits by race and age group.
 
-**10. Key Risks & Opportunities**
+# 10. Key Risks & Opportunities
 
 Risks
 
@@ -167,7 +171,7 @@ Risks
 
 •	Enhance data quality for better forecasting
 
-**11. Strategic Recommendations (Actionable)**
+# 11. Strategic Recommendations (Actionable)
 
 1.	Reduce administrative ER load via pre-registration and outpatient routing.	
 
@@ -184,7 +188,7 @@ Risks
 <img width="845" height="512" alt="MY DASHBOARD" src="https://github.com/user-attachments/assets/aa4fe2f1-b88a-479c-96fa-9efc63906d9e" />
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-****DAX MEASURES AND CALCULATED COLUMNS****
+# DAX MEASURES AND CALCULATED COLUMNS
 ```
 % Administrative Schedule = DIVIDE(COUNTROWS(FILTER(Patient_Dataset,Patient_Dataset[patient_admin_flag]=TRUE())),[Total Patients])
 ```
